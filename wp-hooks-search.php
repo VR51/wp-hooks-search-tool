@@ -1,7 +1,9 @@
 <?php
 /*
 WordPress hook search tool
-Jesin (http://jesin.tk)
+Original: Jesin (http://jesin.tk)
+Modded: Lee (https://journalxtra.com)
+Version 1.4.4.0
 */
 
 if( isset( $_POST ) && isset( $_POST['location'] ) ):

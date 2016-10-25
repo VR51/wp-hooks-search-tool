@@ -34,7 +34,7 @@ if( isset( $_POST ) && isset( $_POST['location'] ) ):
 		$actions = "";
 
 		$code = file_get_contents( $wp_file );
-		
+
 		//Search for actions and filters in the PHP code
 		preg_match_all( "/(apply_filters|do_action|do_action_ref_array)\s*\(\s*[\'\"](.+?)\s*[,\)]/", $code, $hooks );
 		$hooks[2] = str_replace( "'", "", $hooks[2] );
@@ -125,11 +125,13 @@ function array_2d_to_1d( $input_array )
 <head>
 <title>WordPress Hooks Search Tool</title>
 <meta charset="UTF-8" />
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-<script type="text/javascript" src="//code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
 <!--[if lt IE 9]>
-<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <style type="text/css">
 <!--

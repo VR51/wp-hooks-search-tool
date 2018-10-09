@@ -1,8 +1,8 @@
 <?php
 /*
 WordPress hook search tool
-Original: Jesin (http://jesin.tk)
 Modded: Lee (https://journalxtra.com)
+Original: Jesin (http://websistent.com/wordpress-hooks-search-tool/)
 Version 1.4.4.0
 */
 
